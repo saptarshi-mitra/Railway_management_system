@@ -1,0 +1,36 @@
+h1{
+	padding: 10px;
+}
+.placement{
+	max-width: 1000px;
+	margin: 0 auto; 
+}
+.my_signup_login{
+	float: right;
+	margin-right: 15px;
+}
+.my_signup{
+	margin-right: 20px;
+}
+footer{
+	clear:both;
+	background-color: black;
+	height: 500px;
+	background-image: url(../img/foot_bg.jpg);
+	background-position: 50% 50%;
+	opacity: 50%;
+}
+.social-footer{
+	width: 33%;
+	float: left;
+	height: 40%;
+}
+.center{
+	width: 50px;
+	margin:auto;
+	padding-top: 60px;
+}
+.social-footer:hover{
+	background-color: black;
+	opacity: 50%;
+}

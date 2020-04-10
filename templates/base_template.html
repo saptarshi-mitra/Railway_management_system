@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	 <link rel="stylesheet" href="{% static 'css/my_styles.css' %}">
+    <title>Railway</title>
+ </head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="{% url 'train:home' %}">Railway</a>
+  <div class="my_signup_login">
+  <a type="button" class="btn btn-outline-success my_signup" href="{% url 'accounts:signup' %}">Signup</a>
+  <a type="button" class="btn btn-outline-success" href="{% url 'accounts:login' %}">Login</a>
+  </div>
+</nav>
+{% block content %}
+{% endblock %}
+<footer>
+	<div class="social-footer">
+		<div class="center">
+			<img src="/static/img/twitter.png" height="48" width="55">
+		</div>
+	</div>
+	<div class="social-footer">
+		<div class="center">
+			<img src="/static/img/facebook.png" height="55" width="28">
+		</div>
+	</div>
+	<div class="social-footer">
+		<div class="center">
+			<img src="/static/img/instagram.png" height="52" width="52">
+		</div>
+	</div>
+</footer>
+</body>
+<script type="text/javascript" src="/static/js/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="/static/js/popper.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</html>
